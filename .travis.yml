@@ -11,4 +11,4 @@ script:
   - docker-compose run app sh -c "python manage.py test && flake8"
 
 after_failure:
-  - cat
+  - cat MSBuild_*.failure.txt
